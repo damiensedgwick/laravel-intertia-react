@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\AnotherPageController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -12,9 +13,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
 
-    Route::get('anotherpage', function () {
-        return Inertia::render('anotherpage');
-    })->name('anotherpage');
+    Route::get('anotherpage', [AnotherPageController::class, 'index'])->name('anotherpage');
 });
 
 require __DIR__ . '/settings.php';
