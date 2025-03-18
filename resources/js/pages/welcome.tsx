@@ -43,7 +43,6 @@ export default function Welcome() {
                         <h1 className="text-center text-2xl font-bold text-white lg:text-6xl">Laravel, Intertia and React</h1>
                     </main>
                 </div>
-                <div className="hidden h-14.5 lg:block"></div>
             </div>
         </>
     );
