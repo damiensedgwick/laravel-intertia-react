@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\AnotherPageController;
+use App\Http\Controllers\UsersController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -14,6 +15,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 
     Route::get('anotherpage', [AnotherPageController::class, 'index'])->name('anotherpage');
+
+    Route::get('/users', [UsersController::class, 'index'])->name('users');
 });
 
 require __DIR__ . '/settings.php';
