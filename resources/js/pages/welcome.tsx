@@ -40,7 +40,7 @@ export default function Welcome() {
                 </header>
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <main className="flex w-full max-w-[335px] flex-col-reverse lg:max-w-4xl lg:flex-row lg:justify-center">
-                        <h1 className="text-center text-2xl font-bold text-white lg:text-6xl">Laravel, Intertia and React</h1>
+                        <h1 className="text-primary text-center text-2xl font-bold lg:text-6xl">Laravel, Intertia and React</h1>
                     </main>
                 </div>
             </div>
